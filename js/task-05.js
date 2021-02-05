@@ -19,7 +19,7 @@ class Box extends Component {
 
   getProps() {
     console.log(
-      `Element: ${this.element.tag}; Width: ${this.size.width}; Height: ${this.size.heigth}; Background: ${this.color}; 
+      `Element: ${this.element.tag}; Width: ${this.size.width}; Height: ${this.size.heigth}; Background: ${this.color};
       Display: ${this.element.style.display}`,
     );
   }
@@ -41,4 +41,4 @@ const box2 = new Box({
   color: 'red',
 });
 
-box2.getProps(); // 'Element: <div></div>; Width: 50; Height: 50; Background: red; Display: block;'
+box2.getProps(); // 'Element: <div></div>; Width: 50; Height: 50; Background: red; Display: block;'/
