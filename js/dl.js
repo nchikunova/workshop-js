@@ -14,7 +14,10 @@ function sortByGender(students) {
       femaleArray.push(student);
     }
   });
-  return [...maleArray, femaleArray];
+  return {
+      female: femaleArray,
+      male: maleArray
+      }
 }
 
 console.log(sortByGender(students));
